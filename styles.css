@@ -1,0 +1,521 @@
+:root{
+    --primary-color: #ff511a;
+    --secondary-color: #43ba7f;
+    --text-color: #212741;
+    --bg-color: #fff;
+    --link-color: #e36402;
+    --dark-bg-color: #181d30;
+}
+::selection{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+body{
+    background: var(--bg-color);
+    font-family: "Poppins",sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+header{
+    /* width: 100%; */
+    background-color: #4F4740;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    align-items: center;
+    padding: 1rem 0;
+    
+}
+.logo img{
+    height: 5.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    
+    margin: 0;
+    padding: 0;
+}
+.nav-list li{
+    padding: 0 1rem;
+}
+.nav-list li a{
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.nav-list a:hover, .nav-list li a.active{
+    color: var(--link-color);
+}
+.hamburger-menu{
+    display: none;
+}
+.navbar-nav{
+    align-items: center;
+}
+.navbar-nav a{
+    text-decoration: none;
+    color: var(--bg-color);
+}
+.navbar-nav a:hover, .navbar-nav a.active{
+    color: var(--link-color);
+}
+/* hero section */
+.hero{
+    background-image: url(hero-bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation: slide-in 2s ease-out forwards;
+}
+.hero-text{
+    width: 50%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.hero-text h2{
+    font-size: 3.5rem;
+    color: var(--bg-color);
+    font-weight: 700;
+    line-height: 4.375rem;
+    margin-bottom: 2.5rem;
+}
+.hero-text h2 em{
+    font-style: normal;
+    color: var(--primary-color);
+}
+.divider{
+    height: 0.5rem;
+    width: 5rem;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+}
+.hero-text p{
+    color: var(--bg-color);
+    margin-right: 3.75rem;
+    margin-bottom: 3.125rem;
+}
+/*Services*/
+.service-item{
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.1);
+    margin-top: 2rem;
+    width: 95%;
+}
+
+.service-item h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+.service-item p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--primary-color);
+}
+.service-item i{
+    font-size: 4rem;
+    color: var(--primary-color);
+    float: right;
+    margin-right: -4%;
+    margin-bottom: 2rem;
+    transition: 0.5s;
+
+}
+.services i:hover {
+    margin-top: 0.9rem;
+}
+/*Section Heading*/
+.section-header{
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.section-header h6{
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.section-header h4{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+/*Banner*/
+.banner{
+    background-image: url(banner-bg.jpg);
+    background-size: cover;
+    padding: 5rem 0;
+    margin-top: 2%;
+}
+.banner .buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.banner h4{
+    font-size: 2.25rem;
+    color: var(--bg-color);
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.banner h4 em{
+    font-style: normal;
+    color: var(--secondary-color);
+}
+.banner h4 strong{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.btn a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+.btn a:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+.btn1 a{
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+.btn2 a{
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+}
+/*About Us*/
+.about-us{
+    margin-top: 3%;
+    text-align: center;
+}
+.course-list{
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0;
+}
+.course-list li{
+    display: flex;
+    padding: 1rem;
+}
+.course-list li span{
+    flex:1;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+.list-head span{
+    font-weight: 600;
+}
+.item-title{
+    color: var(--secondary-color) !important;
+    font-weight: 600 !important;
+}
+/*Learning Form*/
+.learning-form{
+    margin-top: 2rem;
+    padding: 1rem;
+    background-image: url(plan-bg.png);
+    background-size: cover;
+}
+.learning-form img{
+    width: 100%;
+}
+.learning-form .section-header{
+    margin-top: 2.5rem;
+}
+.learning-form .section-header h4{
+    color: var(--bg-color) !important;
+}
+.learning-form form{
+    color: var(--bg-color);
+    padding: 0 2rem;
+}
+.learning-form form label{
+    padding: 0.8rem 0;
+    padding-top: 1.5rem;
+}
+.learning-form form button{
+    margin: 1.5rem 0;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    transition: 0.3s;
+}
+.learning-form form button:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+}
+.learning-form form input, .learning-form form select{
+    background-color: rgba(121, 121, 121, 0.5);
+    color: var(--bg-color);
+}
+.learning-form form input:focus{
+    background-color: rgba(121, 121, 121, 0.5);
+    color: var(--bg-color);
+}
+/*Testimonials*/
+.testimonial{
+    margin-top: 1%;
+    width: 95%;
+    margin-left: 1.7rem;
+}
+.testimonial-card{
+    display: flex;
+    background-color: var(--bg-color);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(73, 12, 12, 0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 2px solid rgb(241, 232, 232);
+}
+.testimonial-card content{
+    flex: 1;
+}
+.testimonial-card i{
+    font-size: 3vw;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.testimonial-card p{
+    font-size: 1.4vw;
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+.testimonial-card h4{
+    font-size: 1.6vw;
+    font-weight: 600;
+    color: var(--dark-bg-color);
+    margin-bottom: 0.5rem;
+}
+.testimonial-card .subtitle{
+    font-size: 1.2vw;
+    color: var(--primary-color);
+}
+.testimonial-card .image-container{
+    width: 20%;
+    border-radius: 10px;
+}
+.testimonial-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-control-prev{
+    left: -10%;
+}
+.carousel-control-next{
+    right: -10%;
+}
+.carousel-control-prev, .carousel-control-next{
+    filter: invert(1);
+}
+.map{
+    position: relative;
+    margin-bottom: 6rem;
+}
+.details-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 2%;
+    position: absolute;
+    bottom: -10%;
+    padding: 0 3rem;
+    
+    
+}
+.details{
+    flex: 1;
+    padding: 1rem 1rem;
+    box-shadow: 0px 0px 10px #38383881;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    transition: all 0.3s;
+}
+.details i{
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+.details h4{
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    margin: 0;
+}
+.details span{
+    color: var(--secondary-color);
+   
+}
+.details:hover{
+    transform: translateY(-0.5rem);
+}
+.details span:hover{
+    color: var(--link-color);
+}
+/* inquiry form */
+.inquiry{
+    margin-bottom: 4rem;
+}
+.inquiry h2{
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin: 2rem 0;
+    text-transform: capitalize;
+}
+.inquiry form input{
+    margin-bottom: 1rem;
+}
+
+.inquiry form .form-control:focus ~ label{
+   color: var(--primary-color);
+   background-color: var(--bg-color);
+   height: auto;
+   padding: 0;
+   top: 0.5rem;
+   left: 0.8rem;
+   font-size: 0.925rem;
+   border-radius: 0.25rem;
+}
+.inquiry form button{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    transition: 0.3s;
+}
+.inquiry form button:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+}
+/* footer */
+.footer{
+    padding: 1rem 0;
+    background-color: var(--dark-bg-color);
+}
+.footer p{
+    line-height: 2rem;
+    color: var(--bg-color);
+    margin:0;
+}
+.footer p em{
+    font-style: normal;
+    color: var(--primary-color);
+}
+/* Animations */
+@keyframes slide-in{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Responsiveness */
+@media (max-width:990px){
+    /*Hero*/
+    .hero{
+        padding: 4rem;
+    }
+    .hero-text{
+        width: 90%;
+        text-align: center;
+    }
+    .hero-text h2{
+        font-size: 2rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    .divider{
+        margin: 1rem auto;
+    }
+    .hero-text p{
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+   
+}
+@media (max-width:768px) {
+    /*Header*/
+    .logo img{
+        height: 4rem;
+    }
+    
+    .nav-list li a{
+        font-size: 0.8rem;
+        white-space: nowrap;
+        
+    }
+    /*hero*/
+    .divider{
+        width: 12rem;
+    }
+     /*Services*/
+     .service-item{
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+    .service-item i{
+        float: none;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    /*Form Image*/
+    .learning-form img{
+        display: none;
+    }
+}
+
+@media (max-width:560px){
+    /* show hamburger menu */
+    .hamburger-menu{
+        display: block;
+        margin-left: auto;
+        margin-right: 1rem;
+        
+    }
+    /* Hide nav links */
+    .nav-list{
+        display: none;
+    }
+    /*Hero*/
+    .divider, .hero-text p{
+        display: none;
+    }
+    .course-list li{
+        flex-direction: column;
+    }
+    /*Contact Us*/
+    .details-container{
+        flex-direction: column;
+        position: relative;
+        gap: 1rem;
+    }
+    
+}
